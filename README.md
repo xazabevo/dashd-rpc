@@ -1,16 +1,16 @@
-# dashd-rpc
+# xazabd-rpc
 
-[![Build Status](https://img.shields.io/travis/dashevo/dashd-rpc.svg?branch=master)](https://travis-ci.org/dashevo/dashd-rpc)
-[![NPM Package](https://img.shields.io/npm/v/@dashevo/dashd-rpc.svg)](https://www.npmjs.org/package/@dashevo/dashd-rpc)
+[![Build Status](https://img.shields.io/travis/xazabevo/xazabd-rpc.svg?branch=master)](https://travis-ci.org/xazabevo/xazabd-rpc)
+[![NPM Package](https://img.shields.io/npm/v/@xazabevo/xazabd-rpc.svg)](https://www.npmjs.org/package/@xazabevo/xazabd-rpc)
 
-> Dash Client Library to connect to Dash Core (dashd) via RPC
+> Xazab Client Library to connect to Xazab Core (xazabd) via RPC
 
 ## Install
 
-dashd-rpc runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+xazabd-rpc runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install @dashevo/dashd-rpc
+npm install @xazabevo/xazabd-rpc
 ```
 
 ## Usage
@@ -27,8 +27,8 @@ Config parameters :
 
 Promise vs callback based
 
-  - `require('@dashevo/dashd-rpc/promise')` to have promises returned
-  - `require('@dashevo/dashd-rpc')` to have callback functions returned
+  - `require('@xazabevo/xazabd-rpc/promise')` to have promises returned
+  - `require('@xazabevo/xazabd-rpc')` to have callback functions returned
 	
 ### Examples
 
@@ -37,17 +37,17 @@ Config:
 ```javascript
 var config = {
     protocol: 'http',
-    user: 'dash',
+    user: 'xazab',
     pass: 'local321',
     host: '127.0.0.1',
-    port: 19998
+    port: 41414
 };
 ```
 
 Promise based:
 
 ```javascript
-var RpcClient = require('@dashevo/dashd-rpc/promise');
+var RpcClient = require('@xazabevo/xazabd-rpc/promise');
 var rpc = new RpcClient(config);
 
 rpc.getRawMemPool()
@@ -68,8 +68,8 @@ Callback based (legacy):
 
 ```javascript
 var run = function() {
-  var bitcore = require('@dashevo/dashcore-lib');
-  var RpcClient = require('@dashevo/dashd-rpc');
+  var bitcore = require('@xazabevo/xazabcore-lib');
+  var RpcClient = require('@xazabevo/xazabd-rpc');
   var rpc = new RpcClient(config);
 
   var txids = [];
@@ -115,13 +115,13 @@ var run = function() {
 You can dynamically access to the help of each method by doing
 
 ```
-const RpcClient = require('@dashevo/dashd-rpc');
+const RpcClient = require('@xazabevo/xazabd-rpc');
 var client = new RPCclient({
     protocol:'http',
-    user: 'dash',
+    user: 'xazab',
     pass: 'local321', 
     host: '127.0.0.1', 
-    port: 19998
+    port: 41414
 });
 
 var cb = function (err, data) {
@@ -137,8 +137,8 @@ client.help('getinfo',cb);
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/dash-std-template/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/xazabevo/xazab-std-template/issues/new) or submit PRs.
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; Xazab Core Group, Inc.

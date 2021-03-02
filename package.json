@@ -1,6 +1,6 @@
 {
-  "name": "@dashevo/dashd-rpc",
-  "description": "Dash Client Library to connect to Dash Core (dashd) via RPC",
+  "name": "@xazabevo/xazabd-rpc",
+  "description": "Xazab Client Library to connect to Xazab Core (xazabd) via RPC",
   "version": "2.1.0",
   "author": {
     "name": "Stephen Pair",
@@ -29,12 +29,12 @@
     }
   ],
   "keywords": [
-    "dash",
+    "xazab",
     "rpc"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/dashd-rpc"
+    "url": "https://github.com/xazabevo/xazabd-rpc"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -56,7 +56,7 @@
     "sinon": "^9.2.2"
   },
   "bugs": {
-    "url": "https://github.com/dashevo/dashd-rpc/issues"
+    "url": "https://github.com/xazabevo/xazabd-rpc/issues"
   },
-  "homepage": "https://github.com/dashevo/dashd-rpc"
+  "homepage": "https://github.com/xazabevo/xazabd-rpc"
 }
